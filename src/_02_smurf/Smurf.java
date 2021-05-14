@@ -1,4 +1,7 @@
 package _02_smurf;
+
+import javax.swing.JOptionPane;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -30,13 +33,31 @@ public class Smurf {
 
 	// Papa Smurf wears a red hat, all the others are white.
 	public String getHatColor() {
-		// 3. Fill in this method
+		String hat =JOptionPane.showInputDialog("Is "+" Papa Smurf?");
+		if(hat.equals("yes")) {
+			System.out.println("is red");
+			return "red";
+		}
+		if(hat.equals("no")) {
+			System.out.println("is white");
+			return "white";
+			
+		}
 		return "";
 	}
 
 	// Smurfette is the only female Smurf.
 	public String isGirlOrBoy() {
-		// 4. Fill in this method
+		String gender = JOptionPane.showInputDialog(null,"Is "+name+" a girl or boy?");
+		if(gender.equals("girl")) {
+			System.out.println("smurfette");
+			return "girl";
+		}
+		if(gender.equals("boy")) {
+			System.out.println("smurf");
+			return "boy";
+			
+		}
 		return "";
 	}
 
