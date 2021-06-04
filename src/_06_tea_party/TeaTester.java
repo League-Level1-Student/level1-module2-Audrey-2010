@@ -4,7 +4,7 @@ package _06_tea_party;
 	import static org.junit.Assert.assertEquals;
 	import org.junit.Test;
 
-	public class TeaPartyTest {
+	public class TeaTester {
 		/**
 		 * Jane Austen is a woman, so say “Hello Ms. Austen”. 
 		 * George Orwell is a man, so say “Hello Mr. Orwell”. 

@@ -3,30 +3,29 @@ import javax.swing.JOptionPane;
 public class TeaParty {
 	
 	    public String welcome(String name, boolean isWoman, boolean isKnighted) {
-	       String knighted=JOptionPane.showInputDialog("Are you knighted?");
-	       if(knighted.equalsIgnoreCase("yes")) {
-	    	   isKnighted = true; 
-	       }
-	       String gender=JOptionPane.showInputDialog("What is your gender?");
-	       if(gender.equalsIgnoreCase("girl")) {
-	    	   isWoman = true;
-	       }
-	         if(isKnighted||isWoman) {
-	        name="lady "+name;  	 
+	     String hello= "Hello ";
+	       
+	         if(isKnighted&&isWoman) {
+	      hello=hello+"Lady "; 	 
 	         }
 	         else if(isKnighted) {
-	        	 name="sir "+name;
+	        	 hello=hello+"Sir ";
 	         }
 	         else if(isWoman) {
-	        	 name="ms. "+name;
+	        	 hello=hello+"Ms. ";
 	         }
 	         else {
-	        	 name="mr."+name;
+	        	 hello=hello+"Mr. ";
 	         }
+	     
+	         hello=hello+name;
+	         
+	        return hello;
+	         
+			
 	    }
-	  void welcome (String name){
-		System.out.println("Welcome, "+name);  
+ 
 		
 	  }
-	}
-}
+	
+
